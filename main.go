@@ -13,7 +13,7 @@ func main() {
 
 	// Routes
 	app.Get("/", func(c *fiber.Ctx) error {
-		return c.SendString("🚀 Redis Server Running")
+		return c.SendString(" Redis Server Running")
 	})
 
 	app.Get("/seed", handlers.SeedRecords)
